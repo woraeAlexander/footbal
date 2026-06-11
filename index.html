@@ -2,11 +2,226 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=HTML/index.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SRC Sports Academy</title>
+    <meta name="description" content="SRC Sports Academy - Your journey to sports excellence starts here">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Home - SRC Sports Academy</title>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="HTML/index.html">click here to open the site</a>.</p>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>SRC Sports Academy</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="nav" id="navMenu" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="booking.html" class="cta-button">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <form class="search-form" role="search" aria-label="Search site">
+            <label for="search-input" class="sr-only">Search:</label>
+            <input 
+                type="text" 
+                id="search-input" 
+                class="search-input" 
+                placeholder="Search sports, events, or activities..." 
+                aria-label="Search the website"
+            >
+            <button type="submit" class="search-btn" aria-label="Submit search">Search</button>
+        </form>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <video class="hero-video" autoplay muted loop aria-hidden="true">
+                <source src="../IMAGES/sports-hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 id="hero-title">Welcome to SRC Sports Academy</h2>
+                <p class="hero-subtitle">Your journey to sports excellence starts here</p>
+                <a href="booking.html" class="btn btn-primary" aria-label="Book a session now">Book Now</a>
+            </div>
+        </section>
+
+        <!-- Visitor Counter -->
+        <section class="visitor-counter" aria-label="Visitor statistics">
+            <p>Total Visitors: <span id="visitor-count" aria-live="polite">0</span></p>
+        </section>
+
+        <!-- Sports Overview Section -->
+        <section class="sports-overview" aria-labelledby="sports-title">
+            <div class="container">
+                <h2 id="sports-title">Our Sports Programs</h2>
+                <p class="section-subtitle">Excellence in 12 different sports disciplines</p>
+                
+                <div class="sports-grid">
+                    <article class="sport-card">
+                        <img src="../IMAGES/wrestling.jpg" alt="Wrestling training session">
+                        <h3>Wrestling</h3>
+                        <p>Develop strength, technique, and discipline through professional wrestling training</p>
+                    </article>
+                    
+                    <article class="sport-card">
+                        <img src="../IMAGES/taekwondo.jpg" alt="Taekwondo martial arts class">
+                        <h3>Taekwondo</h3>
+                        <p>Master the art of Korean martial arts with certified instructors</p>
+                    </article>
+                    
+                    <article class="sport-card">
+                        <img src="../IMAGES/judo.jpg" alt="Judo training session">
+                        <h3>Judo</h3>
+                        <p>Learn balance, technique, and respect through the art of Judo</p>
+                    </article>
+                    
+                    <article class="sport-card">
+                        <img src="../IMAGES/volleyball.jpg" alt="Volleyball team playing">
+                        <h3>Volleyball</h3>
+                        <p>Join our competitive volleyball teams and develop teamwork skills</p>
+                    </article>
+
+                    <article class="sport-card">
+                        <img src="../IMAGES/football.jpg" alt="Football match">
+                        <h3>Football</h3>
+                        <p>Professional football training and competitive league matches</p>
+                    </article>
+
+                    <article class="sport-card">
+                        <img src="../IMAGES/rugby.jpg" alt="Rugby team training">
+                        <h3>Rugby</h3>
+                        <p>Build team spirit and physical excellence in rugby</p>
+                    </article>
+
+                    <article class="sport-card">
+                        <img src="../IMAGES/ballet.jpg" alt="Ballet performance">
+                        <h3>Ballet</h3>
+                        <p>Develop grace, flexibility, and artistic expression through ballet</p>
+                    </article>
+
+                    <article class="sport-card">
+                        <img src="../IMAGES/table-tennis.jpg" alt="Table tennis match">
+                        <h3>Table Tennis</h3>
+                        <p>Sharpen reflexes and strategic thinking with table tennis</p>
+                    </article>
+
+                    <article class="sport-card">
+                        <img src="../IMAGES/handball.jpg" alt="Handball team">
+                        <h3>Handball</h3>
+                        <p>Dynamic team sport combining speed, skill, and strategy</p>
+                    </article>
+
+                    <article class="sport-card">
+                        <img src="../IMAGES/gymnastics.jpg" alt="Gymnastics performance">
+                        <h3>Gymnastics</h3>
+                        <p>Achieve peak physical fitness and artistic excellence</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="highlights" aria-labelledby="highlights-title">
+            <div class="container">
+                <h2 id="highlights-title">Academy Highlights</h2>
+                
+                <div class="highlights-content">
+                    <article class="highlight-item">
+                        <h3>State-of-the-art Facilities</h3>
+                        <p>Training at SRC Sports Academy means access to world-class sports facilities and equipment.</p>
+                    </article>
+
+                    <article class="highlight-item">
+                        <h3>Expert Coaching</h3>
+                        <p>Our coaches are certified professionals with international experience and proven track records.</p>
+                    </article>
+
+                    <article class="highlight-item">
+                        <h3>Community Engagement</h3>
+                        <p>We foster a vibrant community of athletes, coaches, and sports enthusiasts from all backgrounds.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <h2 id="newsletter-title">Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest news, events, and training updates</p>
+                <form class="newsletter-form" aria-label="Newsletter subscription form">
+                    <label for="newsletter-email" class="sr-only">Email address</label>
+                    <input 
+                        type="email" 
+                        id="newsletter-email" 
+                        placeholder="Enter your email address" 
+                        required
+                        aria-label="Email for newsletter"
+                    >
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About SRC Sports Academy</h3>
+                <p>Promoting sports excellence and community engagement through professional training and world-class facilities.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@srcsportsacademy.edu">info@srcsportsacademy.edu</a></p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 SRC Sports Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
